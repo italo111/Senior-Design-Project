@@ -103,5 +103,6 @@ void loop() {
    String msg= "";
    msg += connection; msg +=","; msg += loadvoltage; msg +=","; msg += current_mA; msg += ","; msg +=(loadvoltage * current_mA);
    mySerial.println(msg);
+    //messages are sent as string of bytes, separated by a comman for each data
    }
 }
